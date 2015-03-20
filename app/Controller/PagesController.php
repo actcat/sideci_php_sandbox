@@ -38,6 +38,44 @@ class PagesController extends AppController {
 	public $uses = array();
 
 /**
+ * TooManyMethods
+*/
+public function display1() {
+}
+public function display2() {
+}
+public function display3() {
+}
+public function display4() {
+}
+public function display5() {
+}
+public function display6() {
+}
+public function display7() {
+}
+public function display8() {
+}
+public function display9() {
+}
+public function display10() {
+}
+public function display11() {
+}
+public function display12() {
+}
+public function display13() {
+}
+public function display14() {
+}
+public function display15() {
+}
+public function display16() {
+}
+public function display17() {
+}
+
+/**
  * Displays a view
  *
  * @return void
