@@ -1,4 +1,4 @@
 linter:
   phpmd:
     options:
-      rule: codesize
+      rule: cleancode,codesize,controversial,design,naming,unusedcode
