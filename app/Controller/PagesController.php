@@ -85,6 +85,8 @@ public function display17() {
 	public function display() {
     $aaaaaaaaaa;
     $bbbbbbbbbb;
+    $aaaaaaaaaa;
+
     $cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc;
 		$path = func_get_args();
 
