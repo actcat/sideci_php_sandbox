@@ -50,30 +50,6 @@ public function display4() {
 }
 public function display5() {
 }
-public function display6() {
-}
-public function display7() {
-}
-public function display8() {
-}
-public function display9() {
-}
-public function display10() {
-}
-public function display11() {
-}
-public function display12() {
-}
-public function display13() {
-}
-public function display14() {
-}
-public function display15() {
-}
-public function display16() {
-}
-public function display17() {
-}
 
 /**
  * Displays a view
@@ -86,6 +62,8 @@ public function display17() {
     $aaaaaaaaaa;
     $bbbbbbbbbb;
     $cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc;
+ 
+    		$dddddddddd;
 		$path = func_get_args();
 
 		$count = count($path);
