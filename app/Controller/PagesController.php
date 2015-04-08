@@ -38,6 +38,20 @@ class PagesController extends AppController {
 	public $uses = array();
 
 /**
+ * TooManyMethods
+*/
+public function display1() {
+}
+public function display2() {
+}
+public function display3() {
+}
+public function display4() {
+}
+public function display5() {
+}
+
+/**
  * Displays a view
  *
  * @return void
@@ -45,6 +59,11 @@ class PagesController extends AppController {
  *	or MissingViewException in debug mode.
  */
 	public function display() {
+    $aaaaaaaaaa;
+    $bbbbbbbbbb;
+    $cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc;
+ 
+    		$dddddddddd;
 		$path = func_get_args();
 
 		$count = count($path);
@@ -73,4 +92,45 @@ class PagesController extends AppController {
 			throw new NotFoundException();
 		}
 	}
+}
+
+/**
+ * CyclomaticComplexity
+ */
+// Cyclomatic Complexity = 12
+class Foo {
+    public function example()  {
+        if ($a == $b)  {
+            if ($a1 == $b1) {
+                fiddle();
+            } else if ($a2 == $b2) {
+                fiddle();
+            }  else {
+                fiddle();
+            }
+        } else if ($c == $d) {
+            while ($c == $d) {
+                fiddle();
+            }
+         } else if ($e == $f) {
+            for ($n = 0; $n < $h; $n++) {
+                fiddle();
+            }
+        } else{
+            switch ($z) {
+                case 1:
+                    fiddle();
+                    break;
+                case 2:
+                    fiddle();
+                    break;
+                case 3:
+                    fiddle();
+                    break;
+                default:
+                    fiddle();
+                    break;
+            }
+        }
+    }
 }
