@@ -1,0 +1,8 @@
+linter:
+  code_sniffer:
+    options:
+      standard: ruleset.xml
+      dir: app/
+  phpmd:
+    options:
+      rule: cleancode,codesize,controversial,design,naming,unusedcode
