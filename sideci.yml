@@ -1,7 +1,7 @@
 linter:
   code_sniffer:
     options:
-      standard: PSR1
+      standard: PSR2
       dir: app/
   phpmd:
     options:
