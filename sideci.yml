@@ -1,7 +1,7 @@
 linter:
   code_sniffer:
     options:
-      standard: PSR2
+      standard: ruleset.xml
       dir: app/
   phpmd:
     options:
