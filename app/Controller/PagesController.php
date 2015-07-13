@@ -118,7 +118,20 @@ public function display17() {
 			}
 			throw new NotFoundException();
 		}
-	}
+  }
+
+  private $顧客名;
+
+  function set顧客名($v)
+  {
+    $this->顧客名 = $v;
+    return $this;
+  }
+
+  function get顧客名()
+  {
+    return $this->顧客名;
+  }
 }
 
 /**
