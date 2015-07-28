@@ -1,0 +1,4 @@
+linter:
+  phpmd:
+    options:
+      rule: ruleset.xml
