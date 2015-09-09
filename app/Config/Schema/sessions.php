@@ -4106,6 +4106,7 @@ class SessionsSchema extends CakeSchema {
 			'indexes' => array('PRIMARY' => array('column' => 'id', 'unique' => 1)),
 			'indexes' => array('PRIMARY' => array('column' => 'id', 'unique' => 1)),
 			'indexes' => array('PRIMARY' => array('column' => 'id', 'unique' => 1)),
+			'indexes' => array('PRIMARY' => array('column' => 'id', 'unique' => 1)),
 			'indexes' => array('PRIMARY' => array('column' => 'id', 'unique' => 1)),			
 	);
 
