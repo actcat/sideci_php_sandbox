@@ -36,6 +36,46 @@ class PagesController extends AppController {
  * @var array
  */
 	public $uses = array();
+	public $uses2 = array();
+	public $uses3 = array();
+
+/**
+ * TooManyMethods
+*/
+public function display1() {
+}
+public function display2() {
+}
+public function display3() {
+}
+public function display4() {
+}
+public function display5() {
+}
+public function display6() {
+}
+public function display7() {
+}
+public function display8() {
+}
+public function display9() {
+}
+public function display10() {
+}
+public function display11() {
+}
+public function display12() {
+}
+public function display13() {
+}
+public function display14() {
+}
+public function display15() {
+}
+public function display16() {
+}
+public function display17() {
+}
 
 /**
  * Displays a view
@@ -45,6 +85,12 @@ class PagesController extends AppController {
  *	or MissingViewException in debug mode.
  */
 	public function display() {
+    $eeeeeeeeee;
+    $aaaaaaaaaa;
+    $bbbbbbbbbb;
+    $aaaaaaaaaa;
+
+    $cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc;
 		$path = func_get_args();
 
 		$count = count($path);
@@ -72,5 +118,59 @@ class PagesController extends AppController {
 			}
 			throw new NotFoundException();
 		}
-	}
+  }
+
+  private $顧客名;
+
+  function set顧客名($v)
+  {
+    $this->顧客名 = $v;
+    return $this;
+  }
+
+  function get顧客名()
+  {
+    return $this->顧客名;
+  }
+}
+
+/**
+ * CyclomaticComplexity
+ */
+// Cyclomatic Complexity = 12
+class Foo {
+    public function example()  {
+        if ($a == $b)  {
+            if ($a1 == $b1) {
+                fiddle();
+            } else if ($a2 == $b2) {
+                fiddle();
+            }  else {
+                fiddle();
+            }
+        } else if ($c == $d) {
+            while ($c == $d) {
+                fiddle();
+            }
+         } else if ($e == $f) {
+            for ($n = 0; $n < $h; $n++) {
+                fiddle();
+            }
+        } else{
+            switch ($z) {
+                case 1:
+                    fiddle();
+                    break;
+                case 2:
+                    fiddle();
+                    break;
+                case 3:
+                    fiddle();
+                    break;
+                default:
+                    fiddle();
+                    break;
+            }
+        }
+    }
 }
