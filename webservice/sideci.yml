@@ -1,0 +1,8 @@
+linter:
+  code_sniffer:
+    options:
+      standard: phpcs.xml
+      encoding: utf-8
+  phpmd:
+    options:
+      rule: phpmd-rule.xml
