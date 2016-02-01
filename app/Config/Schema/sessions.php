@@ -1,6 +1,6 @@
 <?php
 /**
- * This is Sessions Schema file
+ * This is Sessions Schema file.
  *
  * Use it to configure database for Sessions
  *
@@ -12,9 +12,10 @@
  * Redistributions of files must retain the above copyright notice.
  *
  * @copyright     Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
+ *
  * @link          http://cakephp.org CakePHP(tm) Project
- * @package       app.Config.Schema
  * @since         CakePHP(tm) v 0.2.9
+ *
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
@@ -24,34 +25,35 @@
  * cake schema run create Sessions
  *
  */
-class SessionsSchema extends CakeSchema {
+class SessionsSchema extends CakeSchema
+{
+    public $name = 'Sessions';
 
-	public $name = 'Sessions';
+    /**
+     * Before callback.
+     *
+     * @param array $event Schema object properties
+     *
+     * @return bool Should process continue
+     */
+    public function before($event = array())
+    {
+        return true;
+    }
 
-/**
- * Before callback.
- *
- * @param array $event Schema object properties
- * @return bool Should process continue
- */
-	public function before($event = array()) {
-		return true;
-	}
+    /**
+     * After callback.
+     *
+     * @param array $event Schema object properties
+     */
+    public function after($event = array())
+    {
+    }
 
-/**
- * After callback.
- *
- * @param array $event Schema object properties
- * @return void
- */
-	public function after($event = array()) {
-	}
-
-	public $cake_sessions = array(
-		'id' => array('type' => 'string', 'null' => false, 'key' => 'primary'),
-		'data' => array('type' => 'text', 'null' => true, 'default' => null),
-		'expires' => array('type' => 'integer', 'null' => true, 'default' => null),
-		'indexes' => array('PRIMARY' => array('column' => 'id', 'unique' => 1))
-	);
-
+    public $cake_sessions = array(
+        'id' => array('type' => 'string', 'null' => false, 'key' => 'primary'),
+        'data' => array('type' => 'text', 'null' => true, 'default' => null),
+        'expires' => array('type' => 'integer', 'null' => true, 'default' => null),
+        'indexes' => array('PRIMARY' => array('column' => 'id', 'unique' => 1)),
+    );
 }
