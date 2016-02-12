@@ -1,50 +1,66 @@
-# CakePHP
+Symfony Demo Application
+========================
 
-[![Latest Stable Version](https://poser.pugx.org/cakephp/cakephp/v/stable.svg)](https://packagist.org/packages/cakephp/cakephp)
-[![License](https://poser.pugx.org/cakephp/cakephp/license.svg)](https://packagist.org/packages/cakephp/cakephp)
-[![Bake Status](https://secure.travis-ci.org/cakephp/cakephp.png?branch=master)](http://travis-ci.org/cakephp/cakephp)
-[![Code consistency](http://squizlabs.github.io/PHP_CodeSniffer/analysis/cakephp/cakephp/grade.svg)](http://squizlabs.github.io/PHP_CodeSniffer/analysis/cakephp/cakephp/)
+The "Symfony Demo Application" is a reference application created to show how
+to develop Symfony applications following the recommended best practices.
 
-[![CakePHP](http://cakephp.org/img/cake-logo.png)](http://www.cakephp.org)
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy) [![Build Status](https://travis-ci.org/symfony/symfony-demo.svg?branch=master)](https://travis-ci.org/symfony/symfony-demo)
 
-CakePHP is a rapid development framework for PHP which uses commonly known design patterns like Active Record, Association Data Mapping, Front Controller and MVC.
-Our primary goal is to provide a structured framework that enables PHP users at all levels to rapidly develop robust web applications, without any loss to flexibility.
+Requirements
+------------
 
+  * PHP 5.3 or higher;
+  * PDO-SQLite PHP extension enabled;
+  * and the [usual Symfony application requirements](http://symfony.com/doc/current/reference/requirements.html).
 
-## Some Handy Links
+If unsure about meeting these requirements, download the demo application and
+browse the `http://localhost:8000/config.php` script to get more detailed
+information.
 
-[CakePHP](http://www.cakephp.org) - The rapid development PHP framework
+Installation
+------------
 
-[CookBook](http://book.cakephp.org) - THE CakePHP user documentation; start learning here!
+First, install the [Symfony Installer](https://github.com/symfony/symfony-installer)
+if you haven't already. Then, install the Symfony Demo Application executing
+this command anywhere in your system:
 
-[API](http://api.cakephp.org) - A reference to CakePHP's classes
+```bash
+$ symfony demo
 
-[Plugins](http://plugins.cakephp.org/) - A repository of extensions to the framework
+# if you're using Windows:
+$ php symfony demo
+```
 
-[The Bakery](http://bakery.cakephp.org) - Tips, tutorials and articles
+If the `demo` command is not available, update your Symfony Installer to the
+most recent version executing the `symfony self-update` command.
 
-[Community Center](http://community.cakephp.org) - A source for everything community related
+> **NOTE**
+>
+> If you can't use the Symfony Installer, download and install the demo
+> application using Git and Composer:
+>
+>     $ git clone https://github.com/symfony/symfony-demo
+>     $ cd symfony-demo/
+>     $ composer install --no-interaction
 
-[Training](http://training.cakephp.org) - Join a live session and get skilled with the framework
+Usage
+-----
 
-[CakeFest](http://cakefest.org) - Don't miss our annual CakePHP conference
+If you have PHP 5.4 or higher, there is no need to configure a virtual host
+in your web server to access the application. Just use the built-in web server:
 
-[Cake Software Foundation](http://cakefoundation.org) - Promoting development related to CakePHP
+```bash
+$ cd symfony-demo/
+$ php app/console server:run
+```
 
+This command will start a web server for the Symfony application. Now you can
+access the application in your browser at <http://localhost:8000>. You can
+stop the built-in web server by pressing `Ctrl + C` while you're in the
+terminal.
 
-## Get Support!
-
-[#cakephp](http://webchat.freenode.net/?channels=#cakephp) on irc.freenode.net - Come chat with us, we have cake
-
-[Google Group](https://groups.google.com/group/cake-php) - Community mailing list and forum
-
-[GitHub Issues](https://github.com/cakephp/cakephp/issues) - Got issues? Please tell us!
-
-[Roadmaps](https://github.com/cakephp/cakephp/wiki#roadmaps) - Want to contribute? Get involved!
-
-
-## Contributing
-
-[CONTRIBUTING.md](CONTRIBUTING.md) - Quick pointers for contributing to the CakePHP project
-
-[CookBook "Contributing" Section (2.x)](http://book.cakephp.org/2.0/en/contributing.html) [(3.0)](http://book.cakephp.org/3.0/en/contributing.html) - Version-specific details about contributing to the project
+> **NOTE**
+>
+> If you're using PHP 5.3, configure your web server to point at the `web/`
+> directory of the project. For more details, see:
+> http://symfony.com/doc/current/cookbook/configuration/web_server_configuration.html
