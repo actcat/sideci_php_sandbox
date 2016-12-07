@@ -1,0 +1,3 @@
+linter:
+  phpmd:
+    root_dir: 'root/'
