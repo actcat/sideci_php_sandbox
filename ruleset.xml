@@ -10,8 +10,6 @@
     My custom rule set that is example ruleset file.
   </description>
 
-  <!-- Import the entire unused code rule set -->
-  <rule ref="rulesets/unusedcode.xml" />
   <!--
         Import the entire cyclomatic complexity rule and
         customize the rule configuration.
@@ -23,9 +21,4 @@
     </properties>
   </rule>
 
-  <!-- Import entire naming rule set and exclude rules -->
-  <rule ref="rulesets/naming.xml">
-    <exclude name="ShortVariable" />
-    <exclude name="LongVariable" />
-  </rule>
 </ruleset>
